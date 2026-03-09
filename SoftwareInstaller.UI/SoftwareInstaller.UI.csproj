@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\SoftwareInstaller.Core\SoftwareInstaller.Core.csproj" />
+    <ProjectReference Include="..\SoftwareInstaller.Models\SoftwareInstaller.Models.csproj" />
+    <ProjectReference Include="..\SoftwareInstaller.Utils\SoftwareInstaller.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="app.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x86</PlatformTarget>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyName>SoftManager</AssemblyName>
+  </PropertyGroup>
+
+</Project>
